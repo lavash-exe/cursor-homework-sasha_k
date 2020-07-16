@@ -36,15 +36,15 @@ let profit = selfcost - discount
 console.log (profit) // Прибуток
 
 //Advanced
-document.writeln('Найдорожчий товар: ' + priceMax + '<br>') 
-document.writeln('Найдоступніший товар: ' + priceMin + '<br>')
-document.writeln('Загальна вартість: ' + totalPrice + '<br>')
-document.writeln('Загальна вартість з заокругленням: ' + flooredTotal + '<br>')
-document.writeln('Заокруглена сума до сотень: ' + roundedHundred + '<br>')
-document.writeln('Перевірка на парність: ' + isEven + '<br>')
-document.writeln('Решта від 500: ' + change500 + '<br>')
-document.writeln('Середня вартість (з заокругленням): ' + avPrice + '<br>')
-document.writeln('Випадкова знижка: ' + randomDiscount + '<br>')
-document.writeln('До сплати зі знижкою: ' + toPayWithDiscount + '<br>')
-document.writeln('Прибуток: ' + profit + '<br>')
+document.writeln('Найдорожчий товар: ' + priceMax + '\n') 
+document.writeln('Найдоступніший товар: ' + priceMin + '\n')
+document.writeln('Загальна вартість: ' + totalPrice + '\n')
+document.writeln('Загальна вартість з заокругленням: ' + flooredTotal + '\n')
+document.writeln('Заокруглена сума до сотень: ' + roundedHundred + '\n')
+document.writeln('Перевірка на парність: ' + isEven + '\n')
+document.writeln('Решта від 500: ' + change500 + '\n')
+document.writeln('Середня вартість (з заокругленням): ' + avPrice + '\n')
+document.writeln('Випадкова знижка: ' + randomDiscount + '\n')
+document.writeln('До сплати зі знижкою: ' + toPayWithDiscount + '\n')
+document.writeln('Прибуток: ' + profit + '\n')
 
