@@ -36,7 +36,7 @@ let profit = selfcost - discount
 console.log (profit) // Прибуток
 
 //Advanced
-document.writeln('Найдорожчий товар: ' + priceMax + '\n') 
+document.writeln('Найдорожчий товар: ' + priceMax + \n) 
 document.writeln('Найдоступніший товар: ' + priceMin + '\n')
 document.writeln('Загальна вартість: ' + totalPrice + '\n')
 document.writeln('Загальна вартість з заокругленням: ' + flooredTotal + '\n')
