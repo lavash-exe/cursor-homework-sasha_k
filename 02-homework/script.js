@@ -12,13 +12,13 @@ while (isNaN(N)) {
 }
 
 //
-if (boolEven) {
+if (boolEven) { // confirm true
   for (let i = N; i <= M; i++) {
     if (i % 2 !== 0) {
       sum += i;
     }
   }
-} else {
+} else { // confirm false
   for (let i = N; i <= M; i++) {
     sum += i;
   }
