@@ -18,9 +18,11 @@ if (boolEven) { // confirm true
       sum += i;
     }
   }
+  document.write("<p>Сума чисел (якщо пропускаємо парні числа): " + sum + "</p>")
 } else { // confirm false
   for (let i = N; i <= M; i++) {
     sum += i;
   }
+  document.write("<p>Сума чисел (якщо не пропускаємо парні числа): " + sum + "</p>")
 }
 console.log(sum);
