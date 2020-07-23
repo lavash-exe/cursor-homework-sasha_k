@@ -1,17 +1,16 @@
 // Base
 let N = +prompt("Введи значення N"); // питаємо у користувача ввести значення N і переводимо його з string в number
-const M = +prompt("Введи значення M"); // питаємо у користувача ввести значення M і переводимо його з string в number
-console.log(N);
-const boolEven = confirm("Пропускаємо парні числа?");
+console.log(N)
 let sum = 0;
-
-while (isNaN(N)) {
-  // Оскільки я перевів його попередньо на number, то замість parseInt, я використав isNan для відсіювання чисел NaN. Користувач повинен переприсвоїти на ціле
-
-  N = prompt("Це число не ціле, введи ще раз");
+if (!Number.isInteger(N) || N > 0  ) {
+  N = +prompt("Число N не ціле");
 }
+let M = +prompt("Введи значення M"); // питаємо у користувача ввести значення M і переводимо його з string в number
+while ( N > M) {
+    N = +prompt("Число N надто велике, спробуй ще");
+}
+const boolEven = confirm("Пропускаємо парні числа?");
 
-//
 if (boolEven) { // confirm true
   for (let i = N; i <= M; i++) {
     if (i % 2 !== 0) {

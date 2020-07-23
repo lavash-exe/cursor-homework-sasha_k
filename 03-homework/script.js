@@ -139,3 +139,13 @@ function deleteDuplicateLetter(duplicateLetterToDelete, wordWithDuplicates) {
    // Please stand by
 }
 
+document.writeln(`<p>Функція №1: ${getMaxDigit(945)}</p>`)
+document.writeln(`<p>Функція №2: ${powerNumber(10, 3)}</p>`)
+document.writeln(`<p>Функція №3: ${fixName("сАшА")}</p>`)
+document.writeln(`<p>Функція №4: ${taxToPay(1000)}</p>`)
+document.writeln(`<p>Функція №5: ${getRandomNumber(5, 100000)}</p>`)
+document.writeln(`<p>Функція №6: ${countLetter("a", "aero")}</p>`)
+document.writeln(`<p>Функція №7: ${convertCurrency("26000uah")}</p>`)
+document.writeln(`<p>Функція №8: ${getRandomPassword()}</p>`)
+document.writeln(`<p>Функція №9: ${deleteLetters('к', 'кек')}</p>`)
+document.writeln(`<p>Функція №10: ${isPalyndrom('Мадам')}</p>`)
