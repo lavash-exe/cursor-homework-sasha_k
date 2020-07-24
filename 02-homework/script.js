@@ -2,11 +2,14 @@
 let N = +prompt("Введи значення N"); // питаємо у користувача ввести значення N і переводимо його з string в number
 let sum = 0;
 while (!Number.isInteger(N) || N <= 0  ) {
-  N = +prompt("Число N не ціле і не додатнєпш");
+  N = +prompt("Число N не ціле і не додатнє");
 }
 let M = +prompt("Введи значення M"); // питаємо у користувача ввести значення M і переводимо його з string в number
 while ( N > M) {
     N = +prompt("Число N надто велике, спробуй ще");
+}
+while (!Number.isInteger(M) || M <= 0  ) {
+  M = +prompt("Число M не ціле і не додатнє");
 }
 const boolEven = confirm("Пропускаємо парні числа?");
 
