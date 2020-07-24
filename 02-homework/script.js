@@ -1,8 +1,8 @@
 // Base
 let N = +prompt("Введи значення N"); // питаємо у користувача ввести значення N і переводимо його з string в number
 let sum = 0;
-if (!Number.isInteger(N) || N <= 0  ) {
-  N = +prompt("Число N не ціле");
+while (!Number.isInteger(N) || N <= 0  ) {
+  N = +prompt("Число N не ціле і не додатнєпш");
 }
 let M = +prompt("Введи значення M"); // питаємо у користувача ввести значення M і переводимо його з string в number
 while ( N > M) {
