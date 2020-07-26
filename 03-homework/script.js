@@ -9,7 +9,7 @@ function getMaxDigit(enterNumber) {
       max = arrNumbers[i];
     }
   }
-  return "Максимальна цифра у числі: " + max;
+  return `Максимальна цифра у числі:  ${max}`;
 }
 console.log(getMaxDigit(945));
 
@@ -20,7 +20,7 @@ function powerNumber(number, index) {
   for (let i = 0; i < index; i++) {
     res *= number;
   }
-  return "Число " + number + " у степені " + index + " дорівнює: " + res;
+  return `Число ${number} у степені ${index} дорівнює: ${res}`;
 }
 
 console.log(powerNumber(10, 3));
@@ -28,7 +28,7 @@ console.log(powerNumber(10, 3));
 //3
 
 function fixName(name) {
-  return "Поломане ім`я: " + name + " Виправлене ім`я: " + (name[0].toUpperCase() + name.slice(1).toLowerCase());
+  return `Поломане ім'я: ${name} Виправлене ім'я:  ${(name[0].toUpperCase() + name.slice(1).toLowerCase())}`;
 }
 console.log(fixName("сАшА"));
 
@@ -37,7 +37,7 @@ console.log(fixName("сАшА"));
 function taxToPay(salary) {
   const tax = salary * 0.195;
   const yourSalary = salary - tax
-  return "Зарплата з податком: " + yourSalary;
+  return `Зарплата з податком:  ${yourSalary}`;
 }
 
 console.log(taxToPay(1000));
@@ -47,7 +47,7 @@ console.log(taxToPay(1000));
 function getRandomNumber(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return "Випадкове число: " + (Math.floor(Math.random() * (max - min + 1)) + min);
+  return `Випадкове число: ${(Math.floor(Math.random() * (max - min + 1)) + min)}`;
 }
 
 console.log(getRandomNumber(5, 100000));
@@ -63,7 +63,7 @@ function countLetter(letterToCount, wordToCheck) {
     }
   }
   
-  return "Кількість літер " + "'" + letterToCount + "'" +  " у слові " + "'" + wordToCheck + "'" + " дорівнює " + counter;
+  return `Кількість літер ${letterToCount} у слові ${wordToCheck} дорівнює ${counter}`;
 }
 console.log(countLetter("a", "aero"));
 
@@ -76,11 +76,11 @@ function convertCurrency(valueToConvert) {
     
     if(arrValue[arrValue.length - 1] === 'h'){
         exchangeValue = parseInt(valueToConvert) * currencyUAH
-        return 'Конвертована сума з гривень в долари: ' + exchangeValue.toFixed(2) + '$'
+        return `Конвертована сума з гривень в долари: ${exchangeValue.toFixed(2)}$`
     }
     else if (arrValue[arrValue.length - 1] === '$') {
         exchangeValue = parseInt(valueToConvert) * currencyUSD
-        return 'Конвертована сума з доларів у гривні: ' + exchangeValue.toFixed(2) + 'uah'
+        return `Конвертована сума з доларів у гривні: ${exchangeValue.toFixed(2)} uah`
     }
     
 }
@@ -97,7 +97,7 @@ function getRandomPassword(amountOfNumbers = 8) {
         
     }
 
-    return 'Пароль з ' + amountOfNumbers + ' знаків: ' + getRandomNumber(1, maxValue)
+    return `Пароль з ${amountOfNumbers} знаків ${getRandomNumber(1, maxValue)}`
 }
 
 console.log(getRandomPassword(3))
@@ -113,24 +113,26 @@ function deleteLetters(letterToDelete, wordToClear) {
             delete arrWord[i]
         }
       }
-      return "Залишок слова " + wordToClear + " це " + arrWord.toString() + " після видалення літери " + letterToDelete
+      return `Залишок слова "${wordToClear}" це "${arrWord.join('')}" після видалення літери "${letterToDelete}"`
 }
 
 console.log(deleteLetters('к', 'кек'))
 
 //10
 function isPalyndrom (stringToCheck){
-    stringToCheck = stringToCheck.toLowerCase()
-    let reverseString = stringToCheck.toLowerCase().split('').reverse().join('')
-    if(reverseString === stringToCheck) {
-        return "Стрічка " + "'" + stringToCheck + "'" + " паліндром"
+    let firstString = stringToCheck.toLowerCase().replace(/\s/g, '')
+    console.log(firstString)
+    let reverseString = firstString.split('').reverse().join("")
+    console.log(reverseString)
+    if(firstString === reverseString) {
+        return `Стрічка "${stringToCheck}" паліндром`
     }
     else {
-        return "Стрічка " + "'" + stringToCheck + "'" + " не паліндром" 
+        return `Стрічка "${stringToCheck}" не паліндром` 
     }
 }
 
-console.log(isPalyndrom('Мадам'))
+
 
 //11
 
@@ -148,4 +150,4 @@ document.writeln(`<p>Функція №6: ${countLetter("a", "aero")}</p>`)
 document.writeln(`<p>Функція №7: ${convertCurrency("26000uah")}</p>`)
 document.writeln(`<p>Функція №8: ${getRandomPassword()}</p>`)
 document.writeln(`<p>Функція №9: ${deleteLetters('к', 'кек')}</p>`)
-document.writeln(`<p>Функція №10: ${isPalyndrom('Мадам')}</p>`)
+document.writeln(`<p>Функція №10: ${isPalyndrom('кек')}</p>`)
