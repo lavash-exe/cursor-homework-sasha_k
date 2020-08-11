@@ -41,7 +41,7 @@ console.log(getTotalTaxes.call(litva));
 function getMySalary(country) {
     const min = 1500;
     const max = 2000;
-    let salary = Math.trunc(Math.random() * (max - min + 1) + min);
+    let salary = Math.trunc(Math.random() * (max - min + 1) + min)
     const taxes = Math.trunc(salary * country.tax);
     const profit = salary - taxes
     return {
@@ -50,7 +50,8 @@ function getMySalary(country) {
         profit: profit
     }
 }
-
-console.log(getMySalary(latvia));
-console.log(getMySalary(litva));
-console.log(getMySalary(ukraine));
+setInterval(function() {
+    console.log(getMySalary(latvia));
+    console.log(getMySalary(litva));
+    console.log(getMySalary(ukraine));
+}, 10000)

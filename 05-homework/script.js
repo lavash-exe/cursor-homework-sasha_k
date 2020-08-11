@@ -1,3 +1,4 @@
+
 //1
 const getRandomArray = (length, min, max) => {
   const randomNumbersArr = [];
@@ -13,7 +14,7 @@ const getRandomArray = (length, min, max) => {
 console.log(getRandomArray(5, 10, 20));
 
 //3
-const getAverage = (...numbers) => {
+ const getAverage = (...numbers) => {
   let arrayAverage = [];
   let counter = 0;
   numbers.forEach((element) => {
