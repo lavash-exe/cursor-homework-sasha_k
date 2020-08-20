@@ -1,0 +1,32 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 500;
+    background-image: url(./src/background.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-weight: bold;
+}
+
+.sound-board {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 120vh;
+    align-items: center;
+    
+}
+
+.sound-box {
+    width: 100px;
+    height: 60px;
+    border: .3rem solid rgb(99, 94, 31);
+    border-radius: .5rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+kbd { 
+    display: block;
+    font-size: 17px;
+}
