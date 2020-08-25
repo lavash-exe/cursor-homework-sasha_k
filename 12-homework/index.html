@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="enterFilm">
+        <label>
+            Film
+            <input type="text" name="film" value="1">
+        </label>
+        <button type="button" id="create">Characters from film</button>
+        <input type="checkbox" name="wookie" id="wookie-lang" checked>
+    </form>
+    <div class="characters"></div>
+    
+    <!-- <button id="show-info-char">Show info</button> -->
+    <div class="planets"></div>
+    <button id="prev-planet">Previous planet</button>
+    <button id="next-planet">Next planet</button>
+    <script src="script.js"></script>
+</body>
+</html>

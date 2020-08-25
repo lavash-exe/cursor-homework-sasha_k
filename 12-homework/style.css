@@ -1,0 +1,31 @@
+@font-face {
+    font-family: SW-font;
+    src: url(Starjedi.ttf);
+}
+body {
+    font-family: SW-font;
+    background-image: url(./starwars-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgba(248, 248, 10, 0.925);
+}
+.characters {
+    width: fit-content;
+    
+   color: rgba(248, 248, 10, 0.925);
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px ;
+    align-items:center;
+    
+    text-align: center;
+    -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: black;
+
+}
+
+.planets {
+    color: rgba(248, 248, 10, 0.925);
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+}
