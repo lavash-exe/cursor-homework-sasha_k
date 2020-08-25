@@ -92,14 +92,10 @@ paginationInit()
 const ANYFILM = `https://swapi.dev/api/films/`
 function getFilmLink() {
   const filmId = document.enterFilm.film.value
-  const wookie = document.enterFilm.wookie.checked
-  console.log('wookie: ', wookie);
   if (!filmId || Number.isInteger(filmId)) return;
   const theLink = ANYFILM + filmId;
-  console.log('theLink: ', theLink);
   return theLink
 }
-
 const getNewCharacters = async () => {
   try {
     const response = await fetch(getFilmLink())
