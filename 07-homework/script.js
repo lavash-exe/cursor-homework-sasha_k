@@ -51,6 +51,7 @@ function getMySalary(country) {
     }
 }
 setInterval(function() {
+    console.clear()
     console.log(getMySalary(latvia));
     console.log(getMySalary(litva));
     console.log(getMySalary(ukraine));
