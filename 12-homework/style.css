@@ -5,6 +5,7 @@
 body {
     font-family: SW-font;
     background-image: url(./starwars-background.jpg);
+    background-origin: initial;
     background-size: cover;
     background-repeat: no-repeat;
     color: rgba(248, 248, 10, 0.925);
