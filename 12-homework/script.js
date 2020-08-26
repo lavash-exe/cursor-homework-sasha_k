@@ -43,7 +43,7 @@ const renderCharacter = (character) => {
 
 //2-3
 const getPlanets = async (page) => {
-  const mixer = (await PLANETS) + page;
+  const mixer = PLANETS + page;
   const response = await fetch(mixer);
   const data = await response.json();
   const planet = data;
@@ -52,8 +52,9 @@ const getPlanets = async (page) => {
 console.log("getPlanets: ", getPlanets(1));
 
 const renderPlanets = (planet) => {
-  container = document.querySelector(".planets");
+  const container = document.querySelector(".planets");
   const planetElement = document.createElement("div");
+  container.innerHTML = ``
   planetElement.className = "planet";
   planetElement.innerHTML = `
           <h3>Name: ${planet.name}</h3>
