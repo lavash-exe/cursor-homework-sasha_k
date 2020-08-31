@@ -1,8 +1,8 @@
 #square-block {
     display: grid;
-    grid-template-columns: 0px 0px 0px 0px 0px;
-    grid-template-rows: 0px 0px 0px 0px 0px;
-    grid-gap: 5vw;
+    grid-template-columns: 0px 0px 0px 0px 0px  ;
+    grid-template-rows: 0px 0px 0px 0px  ;
+    grid-gap: 5vh;
 }
 
 #square-block div {

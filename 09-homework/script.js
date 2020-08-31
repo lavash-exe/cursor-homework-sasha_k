@@ -1,4 +1,5 @@
 
+
 setInterval(function () {
     $color = generateColor();
     $(`#${randomNumber()}`).css('background-color', $color)
@@ -6,13 +7,14 @@ setInterval(function () {
 
 function generateBlocks() {
     const mainDiv = document.getElementById('square-block')
+    
     for (let i = 1; i <= 25; i++){
         let blockDiv = document.createElement('div')
         blockDiv.id = `${i}`
         blockDiv.style.backgroundColor = generateColor()
         mainDiv.appendChild(blockDiv)
     }
-
+    
 }
 generateBlocks()
 function generateColor() {
@@ -20,5 +22,5 @@ function generateColor() {
 }
 
 function randomNumber() {
-    return Math.floor(Math.random() * 25) + 1;
+    return Math.floor(Math.random() * 24) + 1;
 }
