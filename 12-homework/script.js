@@ -67,18 +67,22 @@ const renderPlanets = (planet) => {
         `;
   container.append(planetElement);
 };
-
+const prevBtn = document.getElementById('prev-planet')
+const nextBtn = document.getElementById('next-planet')
 function paginationInit() {
   let currentPage = 1;
-
+  
   document.querySelector("#prev-planet").addEventListener("click", () => {
-    if (currentPage < 1) return;
-    getPlanets(currentPage--);
+    if (currentPage <= 1) prevBtn.setAttribute('disabled')
+    getPlanets(--currentPage);
   });
   document.querySelector("#next-planet").addEventListener("click", () => {
-    getPlanets(currentPage++);
-    if (currentPage > 28) currentPage = 1;
+    if (currentPage >= 60) nextBtn.setAttribute('disabled')
+    getPlanets(++currentPage);
+    
   });
+  
+  
 }
 paginationInit();
 

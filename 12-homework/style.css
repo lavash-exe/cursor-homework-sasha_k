@@ -1,11 +1,11 @@
 @font-face {
     font-family: SW-font;
-    src: url(Starjedi.ttf);
+    src: url(./assets/Starjedi.ttf);
 }
 
 body {
     font-family: SW-font;
-    background-image: url(./starwars-background.jpg);
+    background-image: url(./assets/starwars-background.jpg);
     background-origin: initial;
     background-size: cover;
     background-repeat: no-repeat;
